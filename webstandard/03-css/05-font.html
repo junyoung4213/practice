@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font / text</title>
+    <style>
+        body, h1, h2{
+         /* font-family: '돋움',dotum,Helvetica,sans-serif;    */
+         font-family: 'Malgun Gothic',Helvetica,sans-serif;
+         font-size: 12px;
+        }
+        h1{
+            background-color: green;
+            font-size: 2.4em;
+            letter-spacing: .1em;   /* 글자간 간격 */
+            text-transform: uppercase;
+            /* uppercase | lowercase | capitalize */
+            /* capitalize는 첫글자만 대문자로 */
+        }
+        h1 small {
+            background-color: lime;
+            font-size: .5em;
+            vertical-align: 5px;
+            /* top | middle | baseline | bottom */
+        }
+        h2 {
+            color: #ff0000;;
+            font-size: 2em;
+            font-variant: small-caps;   /*글자 크기는 유지하면서 소문자가 대문자로 바뀜*/
+            text-decoration: line-through;
+            /* underline | overline | line-through | none */
+        }
+        address {
+            font-style: normal;
+            /* normal | italic | oblique */
+        }
+        .lead{
+            font-size: 1.2em;
+            font-weight: bold;
+            /* bold | bolder | 600 | 700  | 800 | 900 */
+            /* normal | lighter | 100 | 200 | 300 | 400 | 500 */
+            word-spacing: 1em;
+            /* 단어 사이 간격 조절 */
+        }
+        .text{
+            text-indent: 1em;   /* 들여쓰기 / 내어쓰기 */
+            text-align: justify;
+            /* left | center | right | justify */
+            line-height: 1.6;   /* 줄 사이의 간격. 기본값은 em */
+            /* white-space: nowrap; */
+            /* 줄변경이 안됨 */
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <h1>style example <small>sample</small></h1>
+        <h2>Style Example (font-variant)</h2>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, iure.</p>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui adipisci veritatis voluptatibus laboriosam animi illo explicabo vero! Quaerat voluptatibus nihil adipisci. Quasi id laudantium sequi? Suscipit aperiam, consequuntur laborum porro architecto, non libero excepturi reiciendis aut nihil voluptates distinctio earum itaque quis, hic veritatis illum unde ullam quas ipsam esse.</p>
+        <hr>
+        <address>add : Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatum pariatur odit sapiente vero mollitia modi quos adipisci harum, aperiam dolor. Voluptates libero soluta deleniti, voluptatum delectus error temporibus vitae?</address>
+    </div>
+</body>
+</html>

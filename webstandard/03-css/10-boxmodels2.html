@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }   /* 스타일의 초기화 */
+    
+        .box{
+            display: block;
+            /* display: inline-block; */
+            
+            margin: 20px;
+            padding: 20px;
+            /* padding-top: 200px; */
+            /* padding: 100px; */
+            /* padding: 100px 50px; */ /* top bottom | right left */
+            /* padding: 100px 50px 10px; */ /* top | right left | bottom */
+             /* top | right | bottom | left */
+
+            /* border-style : solid | dashed | dotted | double | inset | outset | ridge | groove */
+            /* border-color */
+            /* border-width */
+
+            border: 5px solid black;
+            border-style: double;
+            background-color: lime;
+            /* top right bottom left */
+        }
+        
+    </style>
+</head>
+<body>
+
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+<span class="box">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga eos voluptate obcaecati pariatur minima quae reiciendis deserunt eius accusamus eligendi quasi distinctio sit explicabo aliquam, repudiandae fugit quos dolore earum?
+</span>
+
+</body>
+</html>

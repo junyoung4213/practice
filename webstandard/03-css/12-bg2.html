@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      .box {
+        width: 600px;
+        padding: 20px;
+        border: 3px solid black;
+        background: url(img/walkroad.jpg) no-repeat 50% 50%; /* 위치가 중요하고 자주 쓰임 */
+      }
+      .box2 {
+        /* background-size: 100% auto; */
+        /* background-size: auto 100%; */
+        background-size: cover; /* css3 */
+        background-clip: content-box; /* css3 */
+        background-origin: content-box; /* css3 */ /*cilp보다 사진이 작게 보임. 패딩 안쪽에서부터 시작되기 때문*/
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+    <div class="box box2">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+  </body>
+</html>

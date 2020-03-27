@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector2</title>
+    <style>
+        body {
+            color: #333;
+        }
+        a {
+            color: #888;
+            text-decoration: none;
+        }
+        a:hover, a:active, a:focus {
+            color: red;
+            text-decoration: underline;
+        }
+        .lead:first-line {
+            background-color: lime;
+        }
+        .lead:first-letter{
+            font-size: 5em;
+        }
+        h1:before{
+            content: 'Before area ';
+        }
+        h1:after{
+            content: ' After area';
+            color: red;
+        }
+        /* 숫자는 우선순위! 높을수록 등급이 높음 */
+        div{background-color: lime;} /*type, 1*/    
+        .sample{background-color: green;} /*class, 10*/
+        #sample{background-color: purple;} /*id, 100*/
+
+        div{background-color: red !important} /*!important, 무조건 적용되는 값*/
+    </style>
+</head>
+<body>
+
+    <h1>css selector</h1>
+    <p class="lead"><a href="http://naver.com/">Lorem ipsum dolor sit amet consectetur</a> adipisicing elit. Dicta atque dolores facere, quis deleniti sint eos qui, debitis iusto facilis officiis blanditiis <a href="#">non explicabo optio</a> veritatis tempora cum eveniet tempore!</p>
+    <hr>
+
+    <div class="sample" id="sample" style="background-color: orange;">
+        <!-- inline style : 1000 -->
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur molestiae corrupti delectus iure reprehenderit tenetur quisquam inventore? At, tenetur autem fugiat dolorem amet dignissimos, incidunt laboriosam possimus alias quidem nihil?
+    </div>
+
+</body>
+</html>

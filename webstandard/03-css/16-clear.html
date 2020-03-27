@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>cealr</title>
+    <style>
+      img {
+        vertical-align: top;
+      }
+      .area {
+        width: 800px;
+        overflow: hidden; /* 영역에서 넘치는 부분 */
+        margin: 0 auto;
+        border: 3px dashed red;
+        *zoom: 1; /* IE6, IE7 Hack */
+        /* IE6, IE7에서 잘 출력되게 하려면 써야함 중요*/
+      }
+      /* 
+      .area:after {
+        content: '';
+        display: block;
+        clear: both;
+      } 
+      */
+      .area .thumb {
+        float: left;
+        border: 3px solid black;
+      }
+      .cls {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <div class="thumb"><img src="http://placehold.it/100x120?text=1" alt="" /></div>
+      <div class="thumb"><img src="http://placehold.it/100x120?text=2" alt="" /></div>
+      <div class="thumb"><img src="http://placehold.it/100x120?text=3" alt="" /></div>
+      <div class="thumb"><img src="http://placehold.it/100x120?text=4" alt="" /></div>
+      <div class="thumb"><img src="http://placehold.it/100x120?text=5" alt="" /></div>
+      <!-- clear 위치 -->
+    </div>
+    <p class="cls">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur beatae rem quidem, temporibus distinctio ullam voluptates similique dicta ipsam exercitationem delectus blanditiis minima,
+      obcaecati, est accusamus saepe. Aut autem eius rerum! Vitae rem facere, neque aut eaque dolorem dolor deleniti, impedit odio quos sint, vero ullam! Eveniet sed corrupti voluptatum, dolores
+      voluptate numquam eius aut nemo fugiat nam libero quod eaque nobis quaerat consequatur perspiciatis illum quam modi placeat doloribus quas quos tenetur consequuntur nihil. Deleniti deserunt
+      exercitationem quibusdam magnam consequuntur, ipsum corporis temporibus consequatur itaque sequi quas quos, saepe delectus repellendus! Quia impedit neque reiciendis quam modi suscipit natus!
+    </p>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>background</title>
+    <style>
+      body {
+        background: url(img/twt.png) no-repeat fixed 90% 20px;
+        /* 여기서 90%는 width뿐만 아니라, 사진도 포함된다. width&사진 가로길이의 90퍼센트에 위치하게 된다*/
+        /* background-position: fixed; */ /*스크롤링을 해도 특정 위치에 고정되어 보이게 한다*/
+      }
+      .box {
+        width: 600px;
+        padding: 20px;
+        border: 3px solid black;
+        /* background: url(img/twt.png); */ /* 색상이 안써도 적용되어있기 때문에 덮어씌워진다.
+        대시가 쓰여져 있는걸 아래에 써야함 */
+        background-color: yellow;
+        background-image: url(img/twt.png);
+        background-repeat: no-repeat; /* repeat | no-repeat | repeat-x | repeat-y */
+        background-position: -20px 50%;
+        /* 0 0 은 left top과 같다. */
+        /* left=0, top=0, center=50%, right=100%, bottom=100% */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+    <div class="box">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa maiores ex
+      eius error et nobis cum ullam quisquam laborum, atque nisi consectetur, at
+      tenetur iste hic corporis suscipit facilis! Accusamus libero corrupti
+      fugit culpa ut sit, iure cum, doloremque voluptatem ipsa dignissimos
+      temporibus alias ipsam sapiente, iusto ex quo illum dolorum officia
+      facilis eaque similique cupiditate! Iusto, quam! Assumenda, animi
+      corporis? Et, optio? Officiis consequuntur nam, cum, recusandae quis iure
+      distinctio excepturi, illum eum esse ipsa perspiciatis voluptatum sunt
+      facilis aliquid velit? Eveniet sint eaque natus id nihil? Distinctio amet
+      quasi, mollitia ut voluptates iusto! Aut pariatur vero dignissimos
+      voluptatem?
+    </div>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>boxmodels</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }   /* 스타일의 초기화 */
+        /* 
+        boxmodels
+            content width /height
+            border
+            padding
+            margin
+         */
+        .box{
+            width: 600px;
+            /* border: 5px solid black; */
+            /* padding: 20px; */
+            margin: 30px;
+            background-color: lime;
+        }
+        .box2{
+            border: 5px solid black;
+            padding: 20px;
+        }
+        .box3{
+            box-sizing: border-box; /* css3 <- IE8,7,...(X) */
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+<div class="box box2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+<div class="box box2 box3">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, iusto, eum tempora ipsam esse ex molestiae blanditiis aspernatur voluptates quidem soluta hic, debitis incidunt tempore harum quo ab! Culpa, expedita.
+</div>
+
+</body>
+</html>

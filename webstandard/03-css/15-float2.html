@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>float</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font: 12px 'Malgun Gothic', sans-serif;
+        /* font : weight style variant size/line-height family */
+        /* font : size family 중요함*/
+      }
+      img{
+          vertical-align: top;  
+          /* 이미지 태그에 vertical-align: top 을 지정해주어야*/
+          /* 여백없이 이미지가 출력된다 */
+      }
+      .wrap {
+        width: 800px;
+        margin: 0 auto;
+      }
+      .wrap h1 {
+        padding: 15px 0;
+      }
+      .wrap .thumb {
+        float: left; /* left | right */
+        border: 3px solid black;
+        margin: 15px 0 15px 0;
+      }
+      .wrap .text{
+          clear: both; /* left | right | both */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <h1>float example</h1>
+      <p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=1" alt="" /></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=2" alt="" /></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=3" alt="" /></p>
+        <p class="thumb"><img src="http://placehold.it/100x120?text=4" alt="" /></p>
+        <div class="text">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita veritatis doloribus odio. Nostrum cum quaerat eum accusantium porro rem enim. Ex quae eligendi cum perspiciatis dolore quidem beatae saepe temporibus velit natus magnam sed officia officiis placeat numquam assumenda explicabo, at in! Explicabo nostrum hic animi iusto, adipisci molestiae maiores laboriosam expedita! Ab iure eos maxime quas, consequatur nam optio natus sapiente dolore odio quia quis, praesentium illo, totam in sint. Culpa aspernatur vel molestias quos vitae ipsum at atque nostrum? Dignissimos molestiae, unde ea itaque neque, quisquam saepe esse impedit, veritatis possimus cupiditate consequuntur. Repudiandae repellendus non blanditiis odio?</p>
+        </div>
+      </p>
+    </div>
+  </body>
+</html>

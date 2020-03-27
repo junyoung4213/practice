@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        .tbl{
+            width: 800px;
+            table-layout: fixed;    /* fixed : 박스 크기를 일정하게 만든다 */
+            border-collapse: collapse;
+        }
+        .tbl td, .tbl th {
+            border: 1px solid gray;
+        }
+        .tbl caption{
+            caption-side: bottom;
+        }
+        .tbl .ex1,
+        .tbl .ex2 {
+            empty-cells: hide;  /* border-collapse 상에서는 표현(X) */
+            /* 빈칸을 보이게(show) 안보이게(hide) */
+        }
+    </style>
+</head>
+<body>
+    <table class="tbl">
+        <caption>table caption</caption>
+        <thead>
+            <tr>
+                <th scope="col">table header cell1-1, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi repudiandae, dignissimos nam repellat provident quo rem nesciunt? Autem, itaque eveniet.</th>
+                <th scope="col">table header cell1-2</th>
+                <th scope="col">table header cell1-3</th>
+                <th scope="col">table header cell1-4</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>table data cell1-1</td>
+                    <td>table data cell1-2</td>
+                    <td>table data cell1-3</td>
+                    <td>table data cell1-4</td>
+                </tr>
+                <tr>
+                    <td>table data cell2-1</td>
+                    <td>table data cell2-2</td>
+                    <td>table data cell2-3</td>
+                    <td>table data cell2-4</td>
+                </tr>
+                <tr>
+                    <td>table data cell3-1</td>
+                    <td>table data cell3-2</td>
+                    <td>table data cell3-3</td>
+                    <td>table data cell3-4</td>
+                </tr>
+                <tr>
+                    <td>table data cell4-1</td>
+                    <td>table data cell4-2</td>
+                    <td class="ex1"></td>
+                    <td class="ex2"></td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

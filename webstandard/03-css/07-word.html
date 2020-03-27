@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word-brak, white-space</title>
+    <style>
+        body{
+            font-family: 'Malgun Gothic',sans-serif;
+            font-size: 16px;
+        }
+        .content, .content2, .content3{
+            width: 500px;
+            border: 3px solid black;
+        }
+        .content p{
+            word-break: break-all;
+        }
+        .content2 p{
+            text-align: justify;
+        }
+        .content3 p{
+            text-align: justify;
+            word-break: break-all;
+        }
+        /* white-space : nowrap | pre | pre-wrap | pre-line */
+        .white1{
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre;
+        }
+        .white2{
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre-wrap;
+        }
+        .white3{
+            width: 600px;
+            border: 2px solid black;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="content">
+    <p>Loremipsumdolorsitametconsecteturadipisicingelit.Officialaboreautametconsequaturutsolutadoloribusquod,totamarchitectomaiorescommodiquidemexpeditanobisadipiscinihilassumendaetmagnamquo.</p>
+    </div>
+    <div class="content2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur fugit porro ipsum iure dolore, ipsam recusandae minima alias incidunt nesciunt, ullam nostrum sapiente nulla tenetur ipsa, maiores eligendi cumque asperiores itaque nemo quas. Iste tenetur officiis iusto quibusdam nesciunt repudiandae, voluptate dolor consequuntur voluptatem rerum blanditiis deserunt repellendus. Excepturi cum earum, neque nemo maxime deserunt labore tempora quam dicta quas incidunt accusamus omnis consectetur, ipsum nam officia. Perferendis deleniti tenetur doloremque cum quasi fuga doloribus, magni voluptates soluta temporibus rerum asperiores ipsa quae odit quidem quod nam enim quis eum voluptate non? Totam, deleniti repellendus. Consequatur cupiditate molestias sapiente?</p>
+    </div>
+    <div class="content3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet aspernatur fugit porro ipsum iure dolore, ipsam recusandae minima alias incidunt nesciunt, ullam nostrum sapiente nulla tenetur ipsa, maiores eligendi cumque asperiores itaque nemo quas. Iste tenetur officiis iusto quibusdam nesciunt repudiandae, voluptate dolor consequuntur voluptatem rerum blanditiis deserunt repellendus. Excepturi cum earum, neque nemo maxime deserunt labore tempora quam dicta quas incidunt accusamus omnis consectetur, ipsum nam officia. Perferendis deleniti tenetur doloremque cum quasi fuga doloribus, magni voluptates soluta temporibus rerum asperiores ipsa quae odit quidem quod nam enim quis eum voluptate non? Totam, deleniti repellendus. Consequatur cupiditate molestias sapiente?</p>
+    </div> -->
+    <hr>
+    <div class="white1">
+        Lorem 
+        ipsum dolor 
+        sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque soluta praesentium harum tempore quo esse. At corporis adipisci voluptatum delectus! Mollitia recusandae sunt error id sint? Quos, consequuntur earum?
+    </div>
+    <div class="white2">
+        Lorem 
+        ipsum dolor 
+        sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque soluta praesentium harum tempore quo esse. At corporis adipisci voluptatum delectus! Mollitia recusandae sunt error id sint? Quos, consequuntur earum?
+    </div>
+    <div class="white3">
+        Lorem 
+        ipsum dolor 
+        sit amet.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque soluta praesentium harum tempore quo esse. At corporis adipisci voluptatum delectus! Mollitia recusandae sunt error id sint? Quos, consequuntur earum?
+    </div>
+</body>
+</html>
