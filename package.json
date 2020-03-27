@@ -1,0 +1,21 @@
+{
+    "dependencies": {
+        "babel-eslint": "^10.1.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.10.1"
+    },
+    "eslintConfig": {
+        "extends": [
+            "airbnb",
+            "prettier"
+        ],
+        "rules": {
+            "prettier / prettier": [
+                "error"
+            ]
+        },
+        "env": {
+            "browser": true
+        }
+    }
+}
