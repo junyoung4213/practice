@@ -1,0 +1,14 @@
+{
+  "plugins": ["prettier"],
+  "extends": ["airbnb", "plugin:prettier/recommended"],
+  "rules": {
+    "indent": ["error", 4],
+    "prettier/prettier": "error",
+    "no-unused-vars": 1,
+    "no-use-before-define": 1,
+    "no-redeclare": 1,
+    "no-console": 0
+  },
+
+  "env": { "browser": false, "node": true }
+}

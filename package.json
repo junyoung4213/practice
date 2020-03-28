@@ -1,21 +1,24 @@
 {
-    "dependencies": {
-        "babel-eslint": "^10.1.0",
-        "eslint-config-airbnb": "^18.1.0",
-        "eslint-config-prettier": "^6.10.1"
-    },
-    "eslintConfig": {
-        "extends": [
-            "airbnb",
-            "prettier"
-        ],
-        "rules": {
-            "prettier / prettier": [
-                "error"
-            ]
-        },
-        "env": {
-            "browser": true
-        }
+  "dependencies": {
+    "eslint-config-airbnb": "^18.1.0"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "airbnb"
+    ]
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-prettier": "^3.1.2",
+    "lint-staged": "^10.0.9"
+  },
+  "lint-staged": {
+    "*.js": ["eslint . --fix", "prettier --write"]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
     }
+  }
 }
