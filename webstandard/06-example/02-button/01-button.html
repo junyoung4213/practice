@@ -75,6 +75,46 @@
         text-decoration: underline;
       }
       /* //style */
+      .area {
+        margin: 30px;
+      }
+      .btn_pack {
+        display: inline-block;
+        background: url(img/btn_pack.gif) no-repeat 0 0;
+      }
+      .btn_pack a,
+      .btn_pack button,
+      .btn_pack input {
+        position: relative;
+        right: -4px;
+        display: inline-block;
+        height: 24px;
+        border: 0;
+        padding: 0;
+        padding-left: 6px;
+        padding-right: 10px;
+        background: url(img/btn_pack.gif) no-repeat 100% 0;
+        color: #888;
+        text-decoration: none;
+        line-height: 24px;
+        cursor: pointer;
+      }
+      .btn_pack a:hover,
+      .btn_pack button:hover,
+      .btn_pack input:hover {
+        color: #000;
+      }
+      .btn_pack.large {
+        background-position: 0 -30px;
+      }
+      .btn_pack.large a,
+      .btn_pack.large button,
+      .btn_pack.large input {
+        height: 30px;
+        background-position: 100% -30px;
+        font-size: 14px;
+        line-height: 30px;
+      }
     </style>
   </head>
   <body>
@@ -86,6 +126,16 @@
         <button>button</button>
       </span>
       <span class="btn_pack">
+        <input type="button" value="input" />
+      </span>
+      <hr />
+      <span class="btn_pack large">
+        <a href="#">anchor</a>
+      </span>
+      <span class="btn_pack large">
+        <button>button</button>
+      </span>
+      <span class="btn_pack large">
         <input type="button" value="input" />
       </span>
     </div>
