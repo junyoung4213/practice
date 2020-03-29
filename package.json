@@ -5,7 +5,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "airbnb"
+      "airbnb",
+      "prettier"
     ]
   },
   "devDependencies": {
@@ -14,7 +15,10 @@
     "lint-staged": "^10.0.9"
   },
   "lint-staged": {
-    "*.js": ["eslint . --fix", "prettier --write"]
+    "*.js": [
+      "eslint . --fix",
+      "prettier --write"
+    ]
   },
   "husky": {
     "hooks": {
