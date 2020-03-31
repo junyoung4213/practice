@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery</title>
+    </head>
+    <body>
+        <h1>Where do you want to go?</h1>
+        <h2>Travel Destinations</h2>
+        <p>Plan your next adventure.</p>
+        <ul id="destinations">
+            <li>Rome</li>
+            <li>Paris</li>
+            <li class="promo">Rio</li>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $(function() {
+                $('#destinations li:first').css('color', 'red');
+                $('#destinations li:last').css('color', 'blue');
+                // $('#destinations li:odd').css('color', 'orange');
+                // $('#destinations li:even').css('color', 'purple');
+
+                // var el = document.getElementById('destinations');
+                // console.log(el.firstChild);
+                // console.log(el.lastChild);
+
+                // el.firstChild.style.color = 'red';
+                // el.lastChild.style.color = 'blue';
+            });
+        </script>
+    </body>
+</html>

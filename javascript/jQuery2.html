@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>jQuery</title>
+    </head>
+    <body>
+        <h1>Where do you want to go?</h1>
+        <h2>Travel Destinations</h2>
+        <p>Plan your next adventure.</p>
+        <ul id="destinations">
+            <li>Rome</li>
+            <li>Paris</li>
+            <li class="promo">Rio</li>
+        </ul>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            // id가 destinations인 ul 요소의 후손을 모두 선택한다.
+            $('#destinations .promo').css('border', '4px solid #f00');
+        </script>
+    </body>
+</html>
