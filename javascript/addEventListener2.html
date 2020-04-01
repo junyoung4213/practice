@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="button" id="target" value="button" />
+        <script>
+            var t = document.getElementById('target');
+            t.addEventListener('click', function(event) {
+                alert(1);
+            });
+            t.addEventListener('click', function(event) {
+                alert(2);
+            });
+
+            // 아래의 경우에는 클릭시에 alert(2)만 실행된다.
+            // var t = document.getElementById('target');
+            // t.onclick = function(event) {
+            //     var event = event || window.event;
+            //     var target = event.target || event.srcElement;
+            //     alert(1);
+            // };
+            // t.onclick = function(event) {
+            //     var event = event || window.event;
+            //     var target = event.target || event.srcElement;
+            //     alert(2);
+            // };
+        </script>
+    </body>
+</html>

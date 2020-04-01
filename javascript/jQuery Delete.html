@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="target" id="target1">
+            content1
+        </div>
+
+        <div class="target" id="target2">
+            content2
+        </div>
+
+        <input type="button" value="remove target 1" id="btn1" />
+        <input type="button" value="remove target 2" id="btn2" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script>
+            $('#btn1').click(function() {
+                $('#target1').remove();
+            });
+            $('#btn2').click(function() {
+                $('#target2').empty();
+            });
+        </script>
+    </body>
+</html>
